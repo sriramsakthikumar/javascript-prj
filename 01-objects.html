@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rock Paper Scissors</title>
+</head>
+<body>
+
+
+<script>
+	const product2 = {
+		name : 'shirt',
+		'delivery-time' : '1 day',
+		rating : {
+			stars : 4.5,
+			count : 87
+		},
+
+		fun : function function1(){
+			console.log(1+1);
+		}
+	};
+
+
+	// console.log(product2);
+	// console.log(product2.name);
+	// console.log(product2['delivery-time']);
+	// console.log(product2.rating.count);
+	// product2.fun();
+
+
+const object1 = {
+	message : 'hello'
+};
+
+
+
+const object2 = object1;
+
+object1.message = 'Good Job!';
+
+console.log(object2);
+
+const object3 = {
+	message : 'Good Job!',
+	price : 47
+};
+
+console.log(object2 === object3); //false because objects are references
+
+console.log(object1 === object2); //true because copy by references 
+
+//const message = object3.message;
+
+const {message, price} = object3;
+
+console.log(message);
+console.log(price);
+
+const object5 = {
+	//message : message
+	message, //shorthand property
+	// method : function fname() {
+	// 	console.log("Hi There");
+	// }
+
+	method() {
+		console.log("Hi There");
+	} //shorthand method
+
+};
+
+console.log(object5);
+console.log(object5.method());
+	
+</script>
+</body>
+</html>
